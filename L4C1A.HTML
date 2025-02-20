@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Toggle Table</title>
+    <style>
+        /* Center everything */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            text-align: center;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        td {
+            padding: 15px;
+        }
+
+        #img-div {
+            width: 250px;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #ddd;
+            margin: auto;
+            background-color: #fff;
+        }
+
+        img {
+            display: none;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        .coffee-btn { background-color: #8B4513; color: white; }
+        .coke-btn { background-color: #c1121f; color: white; }
+        .apple-btn { background-color: #28a745; color: white; }
+        .salad-btn { background-color: #7cb518; color: white; }
+        .icecream-btn { background-color: #ff85a2; color: white; }
+        .pizza-btn { background-color: #ff5733; color: white; }
+        .sandwich-btn { background-color: #f4a261; color: white; }
+        .block-btn { background-color: #555; color: white; }
+    </style>
+</head>
+<body>
+
+    <table border="1">
+        <tr>
+            <td colspan="3">
+                <button class="coffee-btn" onclick="showImage('coffee')">Coffee</button>
+                <button class="coke-btn" onclick="showImage('coke')">Coke</button>
+                <button class="apple-btn" onclick="showImage('apple')">Apple</button>
+                <button class="salad-btn" onclick="showImage('green-salad')">Green Salad</button>
+                <button class="icecream-btn" onclick="showImage('ice-cream')">Ice Cream</button>
+                <button class="pizza-btn" onclick="showImage('pizza')">Pizza</button>
+                <button class="sandwich-btn" onclick="showImage('sandwich')">Sandwich</button>
+                <button class="block-btn" onclick="blockImages()">Block</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <div id="img-div">
+                    <img id="coffee" src="images/coffee.png" alt="Coffee">
+                    <img id="coke" src="images/coke.png" alt="Coke">
+                    <img id="apple" src="images/apple.png" alt="Apple">
+                    <img id="green-salad" src="images/green-salad.png" alt="Green Salad">
+                    <img id="ice-cream" src="images/ice-cream.png" alt="Ice Cream">
+                    <img id="pizza" src="images/pizza.png" alt="Pizza">
+                    <img id="sandwich" src="images/sandwich.png" alt="Sandwich">
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function showImage(imageId) {
+            // Hide all images first
+            document.querySelectorAll("#img-div img").forEach(img => {
+                img.style.display = "none";
+            });
+
+            // Show the selected image
+            document.getElementById(imageId).style.display = "block";
+        }
+
+        function blockImages() {
+            document.querySelectorAll("#img-div img").forEach(img => {
+                img.style.display = "none";
+            });
+        }
+    </script>
+
+</body>
+</html>

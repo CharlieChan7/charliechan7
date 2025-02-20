@@ -1,0 +1,9 @@
+<script>start("/Users/charlie/L4/images/");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow("apple.png","apple.png",0,19984,"19.5 kB",1740053521,"20/02/2025, 20:12:01");</script>
+<script>addRow("coffee.png","coffee.png",0,13160,"12.9 kB",1740053521,"20/02/2025, 20:12:01");</script>
+<script>addRow("coke.png","coke.png",0,21334,"20.8 kB",1740053521,"20/02/2025, 20:12:01");</script>
+<script>addRow("green-salad.png","green-salad.png",0,244416,"239 kB",1740053521,"20/02/2025, 20:12:01");</script>
+<script>addRow("ice-cream.png","ice-cream.png",0,29660,"29.0 kB",1740053521,"20/02/2025, 20:12:01");</script>
+<script>addRow("pizza.png","pizza.png",0,33532,"32.7 kB",1740053521,"20/02/2025, 20:12:01");</script>
+<script>addRow("sandwich.png","sandwich.png",0,247065,"241 kB",1740053521,"20/02/2025, 20:12:01");</script>
